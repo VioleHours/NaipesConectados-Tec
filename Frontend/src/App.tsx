@@ -1,12 +1,14 @@
-import './App.css'
+import { Route, Routes } from "react-router-dom";
+import LandingPage from "./Pages/LandingPage";
+import Game from "./Pages/Game";
 
 function App() {
-
   return (
-    <>
-      <h1>Hola mundo!</h1>
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/game" element={<Game />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
