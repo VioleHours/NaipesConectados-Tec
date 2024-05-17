@@ -1,8 +1,13 @@
+import React from "react";
 import "./styles/ResetButton.css";
 
-const ResetButton = () => {
+interface ResetButtonProps {
+  onReset: () => void;
+}
+
+const ResetButton: React.FC<ResetButtonProps> = ({ onReset }) => {
   return (
-    <button className="buttonContainer">
+    <button className="buttonContainer" onClick={onReset}>
       <img src="src\assets\reload.svg" alt="Reload" />
       REINICIAR
     </button>
