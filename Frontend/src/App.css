@@ -1,5 +1,5 @@
 #root {
-  background-image: url("src/assets/img/BackgroundNaipes.png");
+  background-image: url("../src/assets/img/BackgroundNaipes.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,5 +36,5 @@
 }
 
 .startButtonLink {
-  text-decoration: none; /* Elimina el subrayado del enlace */
+  text-decoration: none;
 }
